@@ -3,51 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-
-        <script type="text/template" id="services-template">
-            <h3>Oralington County Support Services</h3>
-        
-            <div>
-                <div class="pull-left">
-                    <div class="services-list">
-                        <% var category = ""; %>
-                        <% _.each(services, function(service) { %>
-                            <% if (category !== service.category.name) { %>
-                                <h4><%= service.category.name %></h4>
-                                <% category = service.category.name; %>
-                            <% } %>
-                            <div>
-                                <a href="#" data-service-id="<%=service.id%>" class="support-service">
-                                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> <%= service.title %>
-                                </a>
-                            </div>
-                            <div><%= service.phone %></div>
-                            <br />
-                        <% }); %>
-                    </div>
-                    <div>
-                        <div class="pull-left">Services Explored: </div>    
-                        <ul class="support-service-progress">
-                            <% _.each(services, function(service) { %>
-                                <li></li>
-                            <% }); %>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="service-description-list pull-left well" style="display: none">
-                    <button type="button" class="close" aria-hidden="true">&times;</button>
-        
-                    <% _.each(services, function(service) { %>
-                        <div class="description" data-service-description="<%=service.id%>" style="display: none">
-                            <h5><%= service.title %></h5>
-                            <div><%= service.description %></div>
-                        </div>
-                    <% }); %>
-                </div>
-            <div>
-            <div class="clearfix"></div>
-        </script>        
     </head>
     <body>
         <div class="support-services"></div>
