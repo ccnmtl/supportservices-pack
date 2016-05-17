@@ -1,7 +1,7 @@
 {
   "name": "supportservices-pack",
   "version": "0.1.0",
-  "description": "",
+  "description": "Interactive to demonstrate typical elder care services",
   "main": "src/index.js",
   "scripts": {
     "serve": "webpack-dev-server --hot --inline --open",
@@ -12,10 +12,26 @@
     "type": "git",
     "url": "git+https://github.com/ccnmtl/supportservices-pack"
   },
+  "bugs": {
+    "url": "https://github.com/ccnmtl/supportservices-pack/issues"
+  },
+  "keywords": [
+    "webpack",
+    "clientside",
+    "ctl"
+  ],
   "author": {
     "name": "Susan Dreher",
     "email": "sdreher@columbia.edu"
   },
+  "contributors": [{
+    "name": "Zarina Mustapha",
+    "email": "zarina@columbia.edu"
+  },
+  {
+    "name": "Cindy Smalletz",
+    "email": "cks2120@columbia.edu"
+  }],
   "license": "MIT",
   "devDependencies": {
     "webpack-dev-server": "^1.4.7"
