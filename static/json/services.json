@@ -1,0 +1,72 @@
+[
+{
+    "id": 1,
+    "category": "Transportation",
+    "phone": "555-878-8421",
+    "description": "<p>We transport to Hospitals, Long Term Care Facilities, Assisted Living Centers, Rehabilitation Centers, Dialysis Appointments, Physical Therapy Centers, Doctor's Offices and many other Health Care Facilities.</p>\r\n<p><i>*There are multiple pick-ups and drop offs for each trip with this service.  Your ride will need to be booked several hours before your medical/dental appointment. </i></p>",
+    "title": "Tri-Center Transportation"
+},
+{
+    "id": 2,
+    "category": "Transportation",
+    "phone": "555-878-8421",
+    "description": "<p>Service is door-to-door when possible, and is provided by drivers who are specially trained to assist elderly and persons with disabilities.</p>\r\n<p><i>*There is a large out of pocket expense for this service</i></p>\r\n",
+    "title": "East West Connection"
+},
+{
+    "id": 3,
+    "category": "Transportation",
+    "phone": "555-878-8421",
+    "description": "<p>Paratransit is the term used for a \"demand-response\" service in which an eligible customer reserves a trip in advance to a destination within the service area covered by public buses and subways.</p>\r\n<p>The Americans with Disabilities Act (ADA) requires that individuals with disabilities unable to use accessible mass transit for some or all of their trips must be provided with paratransit. MTA New York City Transit administers Access-A-Ride (AAR), the paratransit service. </p>\r\n<p><i>*There are multiple pick-ups and drop offs (shared-ride) for each trip with this service.  Your ride will need to be booked several hours before your medical/dental appointment. </i></p> \r\n",
+    "title": "Access a Ride"
+},
+{
+    "id": 4,
+    "category": "Meal Providers",
+    "phone": "555-878-8421",
+    "description": "<p>You may be eligible for home delivered meals if you are 60 years of age or older and:\r\n<ul>\r\n<li>Physically and/or mentally incapacitated and in need of some assistance.</li>\r\n<li>Unable to prepare nutritious meals or have no friends or family to do so for you.</li>\r\n<li>Able to live safely at home if services are provided to you.</li>\r\n</ul>\r\n</p>\r\n<p><i>*May not receive meals if also receiving home care services</i></p>\r\n",
+    "title": "City Meals on Wheels"
+},
+{
+    "id": 5,
+    "category": "Meal Providers",
+    "phone": "555-878-8421",
+    "description": "<p>Home delivered meals.  Seniors may choose to receive daily delivery of hot meals or twice-weekly delivery of fresh-frozen meals. </p>\r\n<p><i>*Pureed meals not available.  Only whole or can fruits provided.</i></p>\r\n \r\n",
+    "title": "Safe Meals"
+},
+{
+    "id": 6,
+    "category": "Senior Center",
+    "phone": "555-878-8421",
+    "description": "<ul>\r\n<li>Arts</li>\r\n<li>Congregate Lunch</li>\r\n<li>Education</li>\r\n<li>Health Management</li>\r\n<li>Dental screening</li>\r\n<li>Physical Health/Exercise</li>\r\n<li>Case assistance</li>\r\n<li>Technology</li>\r\n</ul>\r\n<p><i>*Dental screening offered but transportation is not provided</i></p>",
+    "title": "Northeast Community Senior Center"
+},
+{
+    "id": 7,
+    "category": "Senior Center",
+    "phone": "555-878-8421",
+    "description": "<ul>\r\n<li>Congregate Lunch</li>\r\n<li>Social adult day care</li>\r\n<li>Transportation</li>\r\n</ul>\r\n<p><i>*Transportation provided but no health services offered</i></p>\r\n",
+    "title": "W. Morris Senior Center"
+},
+{
+    "id": 8,
+    "category": "Senior Center",
+    "phone": "555-878-8421",
+    "description": "<ul>\r\n<li>Health Management</li>\r\n<li>Congregate Lunch</li>\r\n<li>Physical Health/Exercise</li>\r\n<li>Technology</li>\r\n<li>Transportation</li>\r\n</ul>\r\n<p><i>*Transportation and health services but no dental screening</i></p>\r\n",
+    "title": "Presbyterian Senior Center"
+},
+{
+    "id": 9,
+    "category": "Home Care",
+    "phone": "555-878-8421",
+    "description": "<ul>\r\n<li>Homemaker/personal care</li>\r\n<li>Housekeeper</li>\r\n</ul>\r\n<p>Personal care aides provide bathing, dressing, grooming (may include oral hygiene if requested), toileting, ambulating, meal planning & preparation, light housekeeping and laundry, meal planning & preparation, light housekeeping and laundry, grocery shopping and errands, transportation, medication reminders (but not medication set-up or administration), exercise, planning events, social engagement, spiritual support and companionship.</p>\r\n<p><i>*Tooth brushing and denture care may be considered medication set up not covered by home care workers.</i></p>\r\n",
+    "title": "Personal Care Homecare Agency"
+},
+{
+    "id": 10,
+    "category": "Home Care",
+    "phone": "555-878-8421",
+    "description": "<ul>\r\n<li>Homemaker/personal care</li>\r\n<li>Housekeeper</li>\r\n<li>Home health aides</li>\r\n</ul>\r\n<p>Home health aide (medically-focused and is typically covered by Medicare and/or other private health insurances. Able to provide wound care, injections, medication management, bowel care, intravenous therapies, rehabilitation and other medically-focused services. </p>\r\n<p><i>*In order for one to qualify for Home Health, a physician must deem that the individual is considered homebound and can't receive these services at an outpatient medical facility.\r\n<br>\r\n*Tooth brushing and denture care may be considered medication set up not covered by home care workers.</i></p>\r\n\r\n",
+    "title": "Brightside Homecare Agency"
+}
+]
