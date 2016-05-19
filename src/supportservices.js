@@ -34,7 +34,7 @@ var SupportServiceList = Backbone.Collection.extend({
         return a;
     },
     comparator: function(service) {
-        return [service.get('category').name, service.get('title')];
+        return [service.get('category'), service.get('title')];
     }
 });
 
@@ -116,4 +116,6 @@ var SupportServicesView = Backbone.View.extend({
     }
 });
 
+module.exports.services = services;
 module.exports.SupportServicesView = SupportServicesView;
+module.exports.SupportServiceList = SupportServiceList;
