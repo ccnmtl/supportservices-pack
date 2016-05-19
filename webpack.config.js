@@ -10,7 +10,7 @@ module.exports = {
             {test: /\.html$/, loader: "underscore-template-loader"},
             {test: /\.css$/, loader: 'style!css!'},
             {test: /\.json/, loader: 'json-loader'}, {
-		test: /\.woff(2)?(\?v=\d+\.\d+\.\d+)?$/,
+                test: /\.woff(2)?(\?v=\d+\.\d+\.\d+)?$/,
                 loader: "url?limit=10000&mimetype=application/font-woff&name=./dist/[hash].[ext]"
             }, {
                 test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
