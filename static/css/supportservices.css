@@ -2,8 +2,17 @@
     width: 38%;
 }
 
+.support-services-instructions .activity-complete-badge {
+    margin-bottom: 10px;
+}
+
 .support-services-instructions h2 {
     margin-top: 10px;
+}
+
+.support-services-instructions .label-print {
+    cursor: pointer;
+    margin-right: 5px;
 }
 
 input.page-submit {
@@ -54,16 +63,41 @@ a.support-service.selected .glyphicon {
 }
 
 .services-list {
-   height: 400px;
-   -webkit-column-count: 2;
-      -moz-column-count: 2;
-           column-count: 2;
-  -webkit-column-gap: 0px;
-     -moz-column-gap: 0px;
-          column-gap: 0px;
-   border: 1px solid #999;
-   width: 96%;
-   margin-right: 10px;
-   padding: 10px;
-   margin-top: 40px;
+    height: 400px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 0px;
+    -moz-column-gap: 0px;
+    column-gap: 0px;
+    border: 1px solid #999;
+    width: 96%;
+    margin-right: 10px;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.printonly {
+    display: none;
+}
+
+@media print {
+    .printonly {
+        display: block;
+    }
+
+    .services-list {
+        height: auto;
+        width: 100%;
+        -webkit-column-count: auto;
+        -moz-column-count: auto;
+        column-count: auto;
+        border: 0;
+    }
+
+    .service-description-list,
+    .support-service-progress-container,
+    .support-services-instructions {
+        display: none !important;
+    } 
 }
