@@ -51,7 +51,7 @@ var SupportServicesView = Backbone.View.extend({
         'onCloseDescription'
     },
     initialize: function(options) {
-        _.bindAll(this, 'initialRender', 'render',
+        _.bindAll(this, 'initialRender', 'render', 'maybeComplete',
                   'onSelectService', 'onCloseDescription');
 
         this.servicesTemplate =
@@ -73,6 +73,8 @@ var SupportServicesView = Backbone.View.extend({
         var markup = this.servicesTemplate(context);
         jQuery(this.el).html(markup);
         this.delegateEvents();
+
+        this.maybeComplete();
     },
     render: function() {
         var selected = this.state.get('services').length;
@@ -85,6 +87,15 @@ var SupportServicesView = Backbone.View.extend({
             jQuery('[data-service-id="' + service.get('id') + '"]')
                 .addClass('selected');
         });
+
+        this.maybeComplete();
+    },
+    maybeComplete: function() {
+        if (this.state.get('services').length === this.services.length) {
+            jQuery('.activity-complete-badge').show();
+        } else {
+            jQuery('.activity-complete-badge').hide();
+        }
     },
     onCloseDescription: function(evt) {
         jQuery('div.service-description-list div.description').hide();
