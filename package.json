@@ -5,8 +5,10 @@
   "main": "src/index.js",
   "scripts": {
     "serve": "webpack-dev-server --hot --inline --open",
-    "test": "mocha",
-    "build": "webpack"
+    "test": "npm run test-unit && npm run test-client",
+    "test-unit": "mocha test/model-test.js",
+    "test-client": "mocha-phantomjs test/view-test.html",
+    "build": "webpack && webpack --config test/test.webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,12 @@
   },
   "keywords": [
     "webpack",
-    "clientside",
+    "phantomjs",
+    "mocha",
+    "chai",
+    "phantomjs",
+    "jquery",
+    "client",
     "ctl"
   ],
   "author": {
@@ -38,6 +45,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.4.5",
+    "mocha-phantomjs": "^4.0.2",
+    "phantomjs-prebuilt": "^2.1.7",
     "webpack-dev-server": "^1.4.7"
   },
   "dependencies": {

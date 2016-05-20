@@ -85,15 +85,6 @@ var SupportServicesView = Backbone.View.extend({
             jQuery('[data-service-id="' + service.get('id') + '"]')
                 .addClass('selected');
         });
-
-        var unlock = this.state.get('services')
-            .length === this.services.length;
-
-        if (unlock) {
-            jQuery('#next').removeClass('disabled');
-        } else {
-            jQuery('#next').addClass('disabled');
-        }
     },
     onCloseDescription: function(evt) {
         jQuery('div.service-description-list div.description').hide();
@@ -119,3 +110,4 @@ var SupportServicesView = Backbone.View.extend({
 module.exports.services = services;
 module.exports.SupportServicesView = SupportServicesView;
 module.exports.SupportServiceList = SupportServiceList;
+

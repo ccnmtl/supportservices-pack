@@ -1,9 +1,7 @@
-var path = require('path');
-
 module.exports = {
-    entry: './src/index.js',
+    entry: './test/view-test.js',
     output: {
-        filename: './dist/bundle.js'
+        filename: './dist/testBundle.js'
     },
     module: {
         loaders: [
