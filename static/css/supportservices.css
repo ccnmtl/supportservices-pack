@@ -2,6 +2,10 @@
     width: 38%;
 }
 
+.support-services-instructions h2 {
+    margin-top: 10px;
+}
+
 input.page-submit {
     display: none;
 }
@@ -38,18 +42,18 @@ a.support-service.selected .glyphicon {
     display: inline-block;
 }
 
-
-div.service-description-list {
+.service-description-list {
     height: 445px;
     width: 38%;
+    margin-top: 5px;
 }
 
-div.service-description-list button.close {
+.service-description-list button.close {
     margin-top: -17px;
     margin-right: -11px;
 }
 
-div.services-list {
+.services-list {
    height: 400px;
    -webkit-column-count: 2;
       -moz-column-count: 2;
@@ -61,4 +65,5 @@ div.services-list {
    width: 96%;
    margin-right: 10px;
    padding: 10px;
+   margin-top: 40px;
 }
