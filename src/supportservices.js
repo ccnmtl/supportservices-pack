@@ -1,4 +1,4 @@
-/* global jQuery: true, module: true */
+/* global jQuery: true, module: true, alert: true */
 
 var jQuery = require('jquery');
 var Backbone = require('backbone');
@@ -48,11 +48,12 @@ var SupportServicesView = Backbone.View.extend({
     events: {
         'click .support-service': 'onSelectService',
         'click div.service-description-list button.close':
-        'onCloseDescription'
+        'onCloseDescription',
+        'click .label-print': 'onPrint'
     },
     initialize: function(options) {
         _.bindAll(this, 'initialRender', 'render', 'maybeComplete',
-                  'onSelectService', 'onCloseDescription');
+                  'onSelectService', 'onCloseDescription', 'onPrint');
 
         this.servicesTemplate =
             require('../static/templates/services-template.html');
@@ -100,6 +101,9 @@ var SupportServicesView = Backbone.View.extend({
     onCloseDescription: function(evt) {
         jQuery('div.service-description-list div.description').hide();
         jQuery('div.service-description-list').hide();
+    },
+    onPrint: function(evt) {
+        window.print();
     },
     onSelectService: function(evt) {
         var self = this;
