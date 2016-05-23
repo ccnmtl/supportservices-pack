@@ -1,9 +1,9 @@
 /* global jQuery: true */
 
 // load css
+require('../node_modules/bootstrap/dist/css/bootstrap.min.css');
 require('../static/css/common.css');
 require('../static/css/supportservices.css');
-require('../node_modules/bootstrap/dist/css/bootstrap.min.css');
 
 var jQuery = require('jquery');
 var module = require('./supportservices.js');
