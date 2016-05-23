@@ -33,3 +33,5 @@ node_modules/jscs/bin/jscs: build
 node_modules/webpack/bin/webpack:
 	npm install
 
+publish:
+	npm publish --access=public
