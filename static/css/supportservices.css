@@ -1,3 +1,7 @@
+.support-services {
+    min-width: 500px;
+}
+
 .support-services-instructions {
     width: 100%;
 }
@@ -77,15 +81,7 @@ a.support-service.selected .glyphicon {
     margin-top: 40px;
 }
 
-.printonly {
-    display: none;
-}
-
 @media print {
-    .printonly {
-        display: block;
-    }
-
     .services-list {
         height: auto;
         width: 100%;
@@ -94,10 +90,4 @@ a.support-service.selected .glyphicon {
         column-count: auto;
         border: 0;
     }
-
-    .service-description-list,
-    .support-service-progress-container,
-    .support-services-instructions {
-        display: none !important;
-    } 
 }
