@@ -35,3 +35,6 @@ node_modules/webpack/bin/webpack:
 
 publish:
 	npm publish --access=public
+
+runserver:
+	npm run serve
