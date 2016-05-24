@@ -1,4 +1,4 @@
-<div class="support-services-instructions">
+<div class="support-services-instructions viewonly">
     <div class="activity-complete-badge">
         <h4>
             <span class="label label-success pull-right">
@@ -16,7 +16,7 @@
 </div>
 <div>
     <div class="pull-left">
-        <div class="support-service-progress-container">
+        <div class="support-service-progress-container viewonly">
             <div class="pull-left">Services Explored: </div>    
             <ul class="support-service-progress">
                 <% for (var i=0; i < services.length; i++) { %>
@@ -45,7 +45,7 @@
         </div>
     </div>
 
-    <div class="service-description-list pull-left well" style="display: none">
+    <div class="service-description-list pull-left well viewonly" style="display: none">
         <button type="button" class="close" aria-hidden="true">&times;</button>
         <% for (var i=0; i < services.length; i++) { %>
             <% var service = services[i]; %>
