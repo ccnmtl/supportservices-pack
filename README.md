@@ -10,3 +10,10 @@ This and other interactives were developed by the Columbia University [College o
 REQUIREMENTS
 ------------
 npm
+
+INSTALLATION
+------------
+1. Clone the repository
+2. Type make runserver. This command will install the necessary npm modules, build the bundle and spin up Webpack's dev server.
+3. Navigate to http://localhost:8080.
+4. Play around with the interactive!
