@@ -19,10 +19,10 @@ test-client: build-test
 	npm run test-client
 
 jshint: node_modules/jshint/bin/jshint
-	./node_modules/jshint/bin/jshint --config=.jshintrc src
+	./node_modules/jshint/bin/jshint --config=.jshintrc src test
 
 jscs: node_modules/jscs/bin/jscs
-	./node_modules/jscs/bin/jscs src
+	./node_modules/jscs/bin/jscs src test
 
 node_modules/jshint/bin/jshint: build
 	npm install jshint --prefix .
