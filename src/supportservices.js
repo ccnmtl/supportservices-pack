@@ -48,8 +48,7 @@ var SupportServicesView = Backbone.View.extend({
     events: {
         'click .support-service': 'onSelectService',
         'click div.service-description-list button.close':
-        'onCloseDescription',
-        'click .label-print': 'onPrint'
+        'onCloseDescription'
     },
     initialize: function(options) {
         _.bindAll(this, 'initialRender', 'render', 'maybeComplete',
@@ -67,6 +66,8 @@ var SupportServicesView = Backbone.View.extend({
         this.on('render', this.render);
 
         this.initialRender();
+
+        jQuery('.btn-print').click(this.onPrint);
     },
     initialRender: function() {
         var context = {'services': this.services.toTemplate()};
@@ -93,9 +94,9 @@ var SupportServicesView = Backbone.View.extend({
     },
     maybeComplete: function() {
         if (this.state.get('services').length === this.services.length) {
-            jQuery('.activity-complete-badge').show();
+            jQuery('.activity-complete').show();
         } else {
-            jQuery('.activity-complete-badge').hide();
+            jQuery('.activity-complete').hide();
         }
     },
     onCloseDescription: function(evt) {
