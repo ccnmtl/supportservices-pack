@@ -18,6 +18,12 @@ test-unit: build build-test
 test-client: build-test
 	npm run test-client
 
+publish: build
+	npm publish --access=public
+
+runserver: build
+	npm run serve
+
 jshint: node_modules/jshint/bin/jshint
 	./node_modules/jshint/bin/jshint --config=.jshintrc src test
 
@@ -32,9 +38,3 @@ node_modules/jscs/bin/jscs: build
 
 node_modules/webpack/bin/webpack:
 	npm install
-
-publish:
-	npm publish --access=public
-
-runserver:
-	npm run serve
