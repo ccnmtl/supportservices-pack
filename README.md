@@ -11,9 +11,21 @@ REQUIREMENTS
 ------------
 npm
 
-INSTALLATION
+DEV INSTALLATION
 ------------
 1. Clone the repository
 2. Type make runserver. This command will install the necessary npm modules, build the bundle and spin up Webpack's dev server.
 3. Navigate to http://localhost:8080.
 4. Play around with the interactive!
+
+NPM INSTALLATION
+------------
+1. npm install supportservices-pack
+2. ./node_modules/webpack/webpack.js --output-path <output_path> --config ./node_modules/supportservices-pack/webpack.config.js
+3. Embed the interactive via an iframe.
+
+```
+<code>
+	<iframe src="<server>/<output_path>/index.html"></iframe>
+</code>
+```
