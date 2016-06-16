@@ -10,6 +10,7 @@ This and other interactives were developed by the Columbia University [College o
 REQUIREMENTS
 ------------
 npm
+webpack
 
 DEV INSTALLATION
 ------------

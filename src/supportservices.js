@@ -55,7 +55,7 @@ var SupportServicesView = Backbone.View.extend({
                   'onSelectService', 'onCloseDescription', 'onPrint');
 
         this.servicesTemplate =
-            require('../static/templates/services-template.tpl');
+            require('../static/templates/services-template.html');
 
         this.services = new SupportServiceList(services);
 

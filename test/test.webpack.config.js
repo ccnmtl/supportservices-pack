@@ -7,7 +7,7 @@ module.exports = {
     },
     module: {
         loaders: [
-            {test: /\.tpl$/, loader: 'underscore-template-loader'},
+            {test: /\.html$/, loader: 'underscore-template-loader'},
             {test: /\.css$/, loader: 'style!css!'},
             {test: /\.json/, loader: 'json-loader'}, {
                 test: /\.woff(2)?(\?v=\d+\.\d+\.\d+)?$/,
