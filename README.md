@@ -21,7 +21,7 @@ DEV INSTALLATION
 
 NPM INSTALLATION
 ------------
-1. npm install supportservices-pack
+1. npm install supportservices-pack --save
 2. ./node_modules/webpack/webpack.js --output-path <output_path> --config ./node_modules/supportservices-pack/webpack.config.js
 3. Embed the interactive via an iframe.
 
