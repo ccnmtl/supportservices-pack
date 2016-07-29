@@ -52,7 +52,8 @@ var SupportServicesView = Backbone.View.extend({
     },
     initialize: function(options) {
         _.bindAll(this, 'initialRender', 'render', 'maybeComplete',
-                  'onSelectService', 'onCloseDescription', 'onPrint');
+                  'onSelectService', 'onCloseDescription', 'onPrint',
+                  'beforeUnload');
 
         this.servicesTemplate =
             require('../static/templates/services-template.html');
@@ -68,6 +69,7 @@ var SupportServicesView = Backbone.View.extend({
         this.initialRender();
 
         jQuery('.btn-print').click(this.onPrint);
+        jQuery(window).on('beforeunload', this.beforeUnload);
     },
     initialRender: function() {
         var context = {'services': this.services.toTemplate()};
@@ -120,6 +122,12 @@ var SupportServicesView = Backbone.View.extend({
         self.onCloseDescription();
         jQuery('[data-service-description="' + serviceId + '"]').show();
         jQuery('div.service-description-list').show();
+    },
+    beforeUnload: function() {
+        if (jQuery('.activity-complete:hidden').length > 0) {
+            return 'The activity is not complete. ' +
+                'Your progress will not be saved if you leave this page.';
+        }
     }
 });
 
