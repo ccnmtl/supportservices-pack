@@ -1,10 +1,13 @@
-.activity-complete h3 {
-    margin-top: 0;
-    margin-bottom: 0;
+.activity-complete {
+    margin: 0;
+}
+
+.done {
+    margin-right: 5px;
 }
 
 .support-services {
-    min-width: 500px;
+    min-width: 690px;
 }
 
 .support-services .interactive-instructions {
@@ -15,20 +18,30 @@ input.page-submit {
     display: none;
 }
 
+.support-service-progress-container {
+    margin-top: 20px;
+}
+
+ul.support-service-progress {
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    padding: 0;
+    background-color: #eee;
+}
+
 ul.support-service-progress li {
     float: left;
     margin: 0;
-    border: 1px solid black;
+    border: none;
     list-style: none;
     color: #fff;
-    width: 20px;
+    width: 31px;
     height: 20px;
-    margin-left: 15px;
     margin-top: -2px;
 }
 
 ul.support-service-progress li.selected {
-    background-color: green;
+    background-color: #337ab7;
 }
 
 a.support-service.selected {
@@ -44,9 +57,9 @@ a.support-service.selected .glyphicon {
 }
 
 .service-description-list {
-    height: 445px;
-    width: 38%;
-    margin-top: 5px;
+    width: 100%;
+    margin: -34px 0 0 0;
+    min-height: 500px;
 }
 
 .service-description-list button.close {
@@ -55,18 +68,30 @@ a.support-service.selected .glyphicon {
 }
 
 .services-list {
-    height: 400px;
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
-    -webkit-column-gap: 0px;
-    -moz-column-gap: 0px;
-    column-gap: 0px;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    -webkit-column-fill: auto;
+    -moz-column-fill: auto;
+    column-fill: auto;
+    -webkit-column-rule: 1px dotted #999;
+    -moz-column-rule: 1px dotted #999;
+    column-rule: 1px dotted #999;
     border: 1px solid #999;
     width: 96%;
-    margin-right: 10px;
     padding: 10px;
-    margin-top: 40px;
+    width: 445px;
+    height: 465px;
+    margin-right: 10px;
+}
+
+.support-service-content-container h4 {
+    border-top: 1px dotted #ccc;
+    margin: 0;
+    padding: 10px 0;
 }
 
 @media print {
