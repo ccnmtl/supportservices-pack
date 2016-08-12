@@ -69,6 +69,7 @@ var SupportServicesView = Backbone.View.extend({
         this.initialRender();
 
         jQuery('.btn-print').click(this.onPrint);
+        jQuery('.interactive-container').show();
         jQuery(window).on('beforeunload', this.beforeUnload);
     },
     initialRender: function() {
