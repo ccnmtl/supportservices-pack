@@ -44,6 +44,19 @@ var UserState = Backbone.Model.extend({
     }
 });
 
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1));
+    var sURLVariables = sPageURL.split('&');
+
+    for (var i = 0; i < sURLVariables.length; i++) {
+        var sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+
 var SupportServicesView = Backbone.View.extend({
     events: {
         'click .support-service': 'onSelectService',
@@ -70,7 +83,10 @@ var SupportServicesView = Backbone.View.extend({
 
         jQuery('.btn-print').click(this.onPrint);
         jQuery('.interactive-container').show();
-        jQuery(window).on('beforeunload', this.beforeUnload);
+        var quiet = getUrlParameter('quiet') === '1';
+        if (!quiet) {
+            jQuery(window).on('beforeunload', this.beforeUnload);
+        }
     },
     initialRender: function() {
         var context = {'services': this.services.toTemplate()};
