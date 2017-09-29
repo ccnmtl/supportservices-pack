@@ -13,7 +13,7 @@ var jQuery = require('jquery');
 var module = require('./supportservices.js');
 
 jQuery(document).ready(function() {
-    var view = new module.SupportServicesView({
+    new module.SupportServicesView({
         el: 'div.support-services'
     });
 });
