@@ -5,13 +5,12 @@ var jQuery = require('jquery');
 var module = require('../src/supportservices');
 
 describe('SupportServicesViewTest', function() {
-    var view;
 
     beforeEach(function() {
         var elt = jQuery('div.support-services');
         assert.isDefined(elt);
 
-        view = new module.SupportServicesView({el: elt});
+        new module.SupportServicesView({el: elt});
     });
 
     it('initialize', function() {

@@ -64,9 +64,10 @@ var SupportServicesView = Backbone.View.extend({
         'onCloseDescription'
     },
     initialize: function(options) {
-        _.bindAll(this, 'initialRender', 'render', 'maybeComplete',
-                  'onSelectService', 'onCloseDescription', 'onPrint',
-                  'beforeUnload');
+        _.bindAll(
+            this, 'initialRender', 'render', 'maybeComplete',
+            'onSelectService', 'onCloseDescription', 'onPrint',
+            'beforeUnload');
 
         this.servicesTemplate =
             require('../static/templates/services-template.html');
