@@ -1,5 +1,6 @@
 /* global beforeEach: true, describe: true, it: true */
 
+require('!file-loader?name=[name].[ext]!./view-test.html');
 var assert = require('chai').assert;
 var jQuery = require('jquery');
 var module = require('../src/supportservices');
