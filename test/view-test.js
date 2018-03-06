@@ -1,7 +1,7 @@
 /* global beforeEach: true, describe: true, it: true */
 
 require('!file-loader?name=[name].[ext]!./view-test.html');
-var assert = require('chai').assert;
+var assert = require('assert');
 var jQuery = require('jquery');
 var module = require('../src/supportservices');
 
@@ -9,7 +9,7 @@ describe('SupportServicesViewTest', function() {
 
     beforeEach(function() {
         var elt = jQuery('div.support-services');
-        assert.isDefined(elt);
+        assert.ok(elt);
 
         new module.SupportServicesView({el: elt});
     });
@@ -21,14 +21,14 @@ describe('SupportServicesViewTest', function() {
 
     it('onSelectAndCloseService', function() {
         // description is closed
-        assert.isFalse(jQuery('.service-description-list').is(':visible'));
+        assert.strictEqual(jQuery('.service-description-list').is(':visible'), false);
 
         // open description
         jQuery('.services-list a.support-service').first().click();
-        assert.isTrue(jQuery('.service-description-list').is(':visible'));
+        assert.strictEqual(jQuery('.service-description-list').is(':visible'), true);
 
         // close description
         jQuery('button.close').click();
-        assert.isFalse(jQuery('.service-description-list').is(':visible'));
+        assert.strictEqual(jQuery('.service-description-list').is(':visible'), false);
     });
 });
