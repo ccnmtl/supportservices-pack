@@ -1,6 +1,6 @@
 {
   "name": "supportservices-pack",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Interactive to demonstrate typical elder care services",
   "main": "src/index.js",
   "scripts": {
