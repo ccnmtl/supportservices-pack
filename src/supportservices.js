@@ -1,4 +1,4 @@
-/* global jQuery: true, module: true, alert: true */
+/* global jQuery: true, module: true */
 
 var jQuery = require('jquery');
 var Backbone = require('backbone');
