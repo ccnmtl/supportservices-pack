@@ -1,7 +1,10 @@
-/* global jQuery: true, module: true */
+/* global module: true */
 
+// eslint-disable-next-line no-redeclare
 var jQuery = require('jquery');
+// eslint-disable-next-line no-redeclare
 var Backbone = require('backbone');
+// eslint-disable-next-line no-redeclare
 var _ = require('underscore');
 
 // load json data

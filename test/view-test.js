@@ -2,6 +2,7 @@
 
 require('!file-loader?name=[name].[ext]!./view-test.html');
 var assert = require('assert');
+// eslint-disable-next-line no-redeclare
 var jQuery = require('jquery');
 var module = require('../src/supportservices');
 
