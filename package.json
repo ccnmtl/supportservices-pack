@@ -67,7 +67,7 @@
     "backbone": "1.4.0",
     "bootstrap": "^3.3.6",
     "jquery": "^3.1.1",
-    "underscore": "1.9.1",
+    "underscore": "1.10.0",
     "underscore-template-loader": "^1.0.0",
     "url-loader": "^4.0.0",
     "webpack": "^4.1.0"
