@@ -12,7 +12,7 @@ var services = require('../static/json/services.json');
 
 var SupportService = Backbone.Model.extend({
     toTemplate: function() {
-        return _(this.attributes).clone();
+        return _.clone(this.attributes);
     }
 });
 
