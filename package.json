@@ -4,7 +4,7 @@
   "description": "Interactive to demonstrate typical elder care services",
   "main": "src/index.js",
   "scripts": {
-    "serve": "webpack-dev-server --hot --inline --open",
+    "serve": "webpack serve --hot --inline --mode development",
     "test": "npm run test-unit && npm run test-client",
     "test-unit": "mocha test/model-test.js",
     "test-client": "mocha-chrome test/view-test.html",
