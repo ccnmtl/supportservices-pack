@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/ccnmtl/supportservicesplan-pack/workflows/build-and-test/badge.svg)](https://github.com/ccnmtl/supportservicesplan-pack/actions)
+
 Older Adult Support Services: Standalone Interactive Exercise 
 ==========
 
