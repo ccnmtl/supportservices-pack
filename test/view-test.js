@@ -1,6 +1,9 @@
 /* global beforeEach: true, describe: true, it: true */
+require('!file-loader?name=[name].[ext]!../test/view-test.html');
 
-var assert = require('assert');
+var chai = require('chai');
+var assert = chai.assert;
+
 // eslint-disable-next-line no-redeclare
 var jQuery = require('jquery');
 var module = require('../src/supportservices');
