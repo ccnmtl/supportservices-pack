@@ -1,6 +1,6 @@
 {
   "name": "supportservices-pack",
-  "version": "0.1.10",
+  "version": "0.2.0",
   "description": "Interactive to demonstrate typical elder care services",
   "main": "src/index.js",
   "scripts": {
@@ -48,7 +48,6 @@
   "devDependencies": {
     "chai": "^4.0.2",
     "eslint": "~7.32.0",
-    "eslint-config-scanjs": "^1.0.0-beta4",
     "eslint-plugin-no-unsafe-innerhtml": "^1.0.16",
     "eslint-plugin-security": "^1.4.0",
     "loglevel": "^1.4.1",
