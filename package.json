@@ -48,7 +48,6 @@
   "devDependencies": {
     "chai": "^4.0.2",
     "eslint": "~8.10.0",
-    "eslint-plugin-no-unsafe-innerhtml": "^1.0.16",
     "eslint-plugin-security": "^1.4.0",
     "loglevel": "^1.4.1",
     "mocha": "^9.0.0",
