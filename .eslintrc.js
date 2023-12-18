@@ -1,42 +1,42 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "amd": true,
-        "jquery": true
+    'env': {
+        'browser': true,
+        'amd': true,
+        'jquery': true
     },
-    "plugins": [
-        "security"
+    'plugins': [
+        'security'
     ],
-    "extends": [
-        "eslint:recommended",
-        "plugin:security/recommended"
+    'extends': [
+        'eslint:recommended',
+        'plugin:security/recommended-legacy'
     ],
-    "globals": {
-        "_": true,
-        "Backbone": true,
-        "google": true,
+    'globals': {
+        '_': true,
+        'Backbone': true,
+        'google': true,
     },
-    "rules": {
-        "indent": [
-            "error",
+    'rules': {
+        'indent': [
+            'error',
             4
         ],
-        "linebreak-style": [
-            "error",
-            "unix"
+        'linebreak-style': [
+            'error',
+            'unix'
         ],
-        "no-unused-vars": [
-            "error",
-            {"vars": "all", "args": "none"}
+        'no-unused-vars': [
+            'error',
+            {'vars': 'all', 'args': 'none'}
         ],
-        "quotes": [
-            "error",
-            "single"
+        'quotes': [
+            'error',
+            'single'
         ],
-        "security/detect-object-injection": "off",
-        "semi": [
-            "error",
-            "always"
+        'security/detect-object-injection': 'off',
+        'semi': [
+            'error',
+            'always'
         ]
     }
 };
