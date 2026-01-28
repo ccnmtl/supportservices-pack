@@ -62,7 +62,7 @@
   "dependencies": {
     "backbone": "1.6.0",
     "bootstrap": "^5.3.4",
-    "jquery": "^3.5.0",
+    "jquery": "^4.0.0",
     "underscore": "1.13.1",
     "underscore-template-loader": "^1.0.0",
     "url-loader": "^4.0.0",
